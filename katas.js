@@ -39,3 +39,18 @@ function factorial (a){
 }
 console.log(factorial(5));
 
+function fibonacci(n){
+    let total =0;
+    let counter =0;
+    let result =1;
+    let count =2;
+    while (count < n){
+        total = add(counter, result)
+        counter=result
+        result=total 
+        count += 1
+    }
+    return total
+}
+console.log(fibonacci(8));
+
